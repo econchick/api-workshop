@@ -40,3 +40,6 @@ Secondary:
     * How to install Python packages and work with Python virtual environments
     * What an API is
     * How to "chop up data" from an API for your enjoyment
+
+[pysf]: https://www.meetup.com/pyladiessf
+[workshop]: http://www.meetup.com/PyLadiesSF/events/201387112/
