@@ -50,7 +50,21 @@ For Mac or Linux machine having trouble, please feel free to do the Windows/olde
 3. Navigate to "Utilities"
 4. Double-click to launch "Terminal"
 
-**I. ZLIB**
+**I. Command Line Tools**
+
+If you don't already have one, you'll need to create a (free) developer account (attached to your Apple iTunes login).  Go [here](https://developer.apple.com/register/index.action) to complete the registration.
+
+After you register, navigate [here](https://developer.apple.com/downloads/index.action) and find "Command Line Tools" for your version of your Mac.  Download & install the package.
+
+To verify that it is all correct, go to your Terminal, and type: `gcc`.  You *should* see something like the following:
+
+```bash
+clang: error: no input files
+```
+
+If you see `command not found: gcc`, please grab a mentor and ask for help.
+
+**II. ZLIB**
 
 **Have Homebrew installed?** If you have homebrew installed (no need to install it!), run first run `brew update`, then `brew install zlib`. Continue onto "II. LIBPNG".
 
@@ -69,7 +83,7 @@ $ sudo make install
 
 **GOT AN ERROR?** Ask for help!
 
-**II. LIBPNG**
+**III. LIBPNG**
 
 **Have Homebrew installed?** If you have homebrew installed (no need to install it!), run `brew install libpng`. Continue onto "III. FREETYPE".
 
@@ -89,7 +103,7 @@ $ sudo make install
 
 **GOT AN ERROR?** Ask for help!
 
-**III. FREETYPE**
+**IV. FREETYPE**
 
 **Have Homebrew installed?** If you have homebrew installed (no need to install it!), run `brew install freetype`. Continue onto "IV. Python Setup".
 
@@ -108,7 +122,7 @@ $ sudo make install
 
 **GOT AN ERROR?** Ask for help!
 
-**IV. Python setup**
+**V. Python setup**
 
 1. Install pip by following instructions here: [get-pip](https://pip.pypa.io/en/latest/installing.html).
 2. After you install `pip` with the previous step, run the following commands in your terminal (if prompted for your password, use your password that you use to login to your computer):
@@ -119,7 +133,7 @@ $ sudo pip install virtualenv
 
 **GOT AN ERROR?** Ask for help!
 
-**V. Python Package Installation**
+**VI. Python Package Installation**
 
 For Python Package installation, continue on to **Everyone** below.
 
