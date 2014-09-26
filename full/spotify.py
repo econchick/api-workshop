@@ -76,6 +76,10 @@ def get_tracks(track_urls, token):
     return track_data
 
 
+# NOTE: the more "pythonic" way to do this is:
+# >>> import dateutil.parser
+# >>> foo = dateutil.parser.parse(raw_date)
+# but I'd like to show some string slicing
 def parse_raw_date(raw_date):
     # 2014-09-09T15:00:27Z
     if raw_date:

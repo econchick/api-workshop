@@ -4,6 +4,7 @@ Installation Checklist:
 
 * Computer Setup
 	* Mac 10.7 and newer:
+		* <input type="checkbox"> Install Apple's Command Line Tools
 		* <input type="checkbox"> zlib, libpng, & freetype installation
 		* <input type="checkbox"> pip installation
 		* <input type="checkbox"> virtualenv installation
@@ -51,6 +52,14 @@ For Mac or Linux machine having trouble, please feel free to do the Windows/olde
 4. Double-click to launch "Terminal"
 
 **I. Command Line Tools**
+
+First, to see if you have the command line tools, in your Terminal, type: `gcc`.  If you **do not** see something like:
+
+
+```bash
+clang: error: no input files
+```
+Then continue on.  However, if you do get the above message, then continue to **II. ZLIB**.
 
 If you don't already have one, you'll need to create a (free) developer account (attached to your Apple iTunes login).  Go [here](https://developer.apple.com/register/index.action) to complete the registration.
 
