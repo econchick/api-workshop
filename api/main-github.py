@@ -49,7 +49,7 @@ def main():
     playlists = sp.get_user_playlists(token, args.username)
 
     # parse out the tracks URL for each playlist
-    track_urls = sp.get_playlist_track_urls(playlists)
+    track_urls = sp.get_playlist_track_urls(playlists, args.username)
 
     # request track data from the tracks URLs
     track_data = sp.get_tracks(track_urls, token)

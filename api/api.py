@@ -67,7 +67,7 @@ def main():
     playlists = sp.get_user_playlists(token, args.spotify_user)
 
     log.debug("Parsing out track URLs from each playlist")
-    track_urls = sp.get_playlist_track_urls(playlists)
+    track_urls = sp.get_playlist_track_urls(playlists, args.spotify_user)
     log.debug("Parsed tracks from {0} playlists.".format(len(track_urls)))
 
     log.debug("Fetching track data for each track URL.")
