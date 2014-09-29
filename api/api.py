@@ -42,7 +42,7 @@ def main():
         log.setLevel(logging.INFO)
 
     # Config Shit
-    parent_dir = os.path.abspath(os.pardir)
+    parent_dir = os.path.dirname(os.path.dirname(__file__))
     config_file = os.path.join(parent_dir, "config.ini")
     config = ConfigParser.ConfigParser()
     config.read(config_file)
